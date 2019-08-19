@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    
+    <PackageId>Alamut.Abstractions</PackageId>
+    <Version>0.0.3</Version>
+    <Authors>Hamed ZVand</Authors>
+    <Product>Alamut</Product>
+    <Description>Abstraction Classes and Contracts for Alamut Toolset</Description>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <PackageProjectUrl>https://github.com/SorenZ/Alamut.DotNet</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIconUrl>https://sorenz.github.io/alamut-256.png</PackageIconUrl>
+  </PropertyGroup>
+
+</Project>
