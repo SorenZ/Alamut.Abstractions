@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8376913C-1C0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alamut.Abstractions", "src\Alamut.Abstractions\Alamut.Abstractions.csproj", "{46FD5093-B0F0-45F9-B20D-42B6A4FFB745}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{050C601E-8799-4F72-BF25-D6DE90104CFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alamut.Abstractions.Test", "test\Alamut.Abstractions.Test\Alamut.Abstractions.Test.csproj", "{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +36,21 @@ Global
 		{46FD5093-B0F0-45F9-B20D-42B6A4FFB745}.Release|x64.Build.0 = Release|Any CPU
 		{46FD5093-B0F0-45F9-B20D-42B6A4FFB745}.Release|x86.ActiveCfg = Release|Any CPU
 		{46FD5093-B0F0-45F9-B20D-42B6A4FFB745}.Release|x86.Build.0 = Release|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Debug|x64.Build.0 = Debug|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Release|x64.ActiveCfg = Release|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Release|x64.Build.0 = Release|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Release|x86.ActiveCfg = Release|Any CPU
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{46FD5093-B0F0-45F9-B20D-42B6A4FFB745} = {8376913C-1C0F-4A9C-9960-00261398EBF3}
+		{ED48E6D0-40EF-4B19-ADCE-32783047CAD8} = {050C601E-8799-4F72-BF25-D6DE90104CFD}
 	EndGlobalSection
 EndGlobal
