@@ -28,11 +28,11 @@ namespace Alamut.Abstractions.Structure
         }
 
         /// <summary>
-        /// provides an unsuccessfull result
+        /// provides an unsuccessfull Result
         /// </summary>
         /// <param name="message">error message</param>
         /// <param name="statusCode"></param>
-        /// <returns>error result</returns>
+        /// <returns>error (unsuccessfull) result</returns>
         public static Result Error(string message = "", int statusCode = 500)
         {
             return new Result
@@ -43,7 +43,7 @@ namespace Alamut.Abstractions.Structure
             };
         }
 
-        // <summary>
+        /// <summary>
         /// creates an unsuccessfull Result from an exception
         /// </summary>
         /// <param name="ex">the exception</param>
