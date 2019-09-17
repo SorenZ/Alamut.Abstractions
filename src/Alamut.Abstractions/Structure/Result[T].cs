@@ -60,6 +60,7 @@ namespace Alamut.Abstractions.Structure
             };
         }
 
+        public static implicit operator bool(Result<T> result) => result.Succeed;
 
         #region Object overrides 
         public override bool Equals(object obj)

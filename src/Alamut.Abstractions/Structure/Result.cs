@@ -59,7 +59,10 @@ namespace Alamut.Abstractions.Structure
             };
         }
 
+        public static implicit operator bool(Result result) => result.Succeed;
+
         #region Object overrides 
+
         public override bool Equals(object obj)
         {
             var sr = obj as Result;
@@ -78,6 +81,7 @@ namespace Alamut.Abstractions.Structure
                 return Convert.ToInt32(this.Succeed) + this.StatusCode;
             }
         }
+        
         #endregion
     }
 }

@@ -59,10 +59,50 @@ namespace Alamut.Abstractions.Test.Structure
             };
 
        //When
-            var expected = Result.Exception(exception);
+            var expected = Result<Foo>.Exception(exception);
 
        //Then
             Assert.Equal(expected, actual);
+       }
+
+       [Fact]
+       public void Result_BoolOperatorOnSuccess_ReturnTrue()
+       {
+       //Given
+            var actual = new Result<Foo>
+            {
+                Succeed = true,
+                Message = "",
+                StatusCode = 200
+            };
+
+       //When
+            var expected = Result<Foo>.Okay();
+
+        //Then
+            Assert.True(actual);
+            Assert.True(expected);
+       }
+
+       [Fact]
+       public void Result_BoolOperatorOnUnsuccess_ReturnFalse()
+       {
+       //Given
+            var actual = new Result<Foo>
+            {
+                Succeed = false,
+                Message = "",
+                StatusCode = 500
+            };
+
+       //When
+            var error = Result<Foo>.Error();
+            var exception = Result<Foo>.Exception(new Exception());
+
+        //Then
+            Assert.False(actual);
+            Assert.False(error);
+            Assert.False(exception);
        }
     }
 
