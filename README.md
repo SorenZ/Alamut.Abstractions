@@ -1,5 +1,6 @@
 # Alamut.Abstractions
-Abstraction Classes and Contracts for Alamut Tool-set
+### This library provides Abstract Classes, Contracts and data-structure for Alamut Tool-set.
+Further Details in [Wiki](https://github.com/SorenZ/Alamut.Abstractions/wiki)  
 
 
 ### Installing Alamut.Abstractions
