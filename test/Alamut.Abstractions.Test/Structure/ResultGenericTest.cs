@@ -104,6 +104,28 @@ namespace Alamut.Abstractions.Test.Structure
             Assert.False(error);
             Assert.False(exception);
        }
+
+    //    public Foo Demo1()
+    //    {
+    //        var result = ExternalService();
+    //        if(result)
+    //         { return result.Data; }
+    //         else
+    //         {
+    //             _logger.LogError(result.Message);
+    //             return NotFound();
+    //         }
+    //    }
+
+    //    private Result<Foo> ExternalService()
+    //    {
+    //         // do some network comunication and return value
+    //         var value = new Foo("bar");
+
+    //         return Result<Foo>.Okay(value);
+    //         return Result<Foo>.Exception(new TimeoutException());
+    //         return Result<Foo>.Error("something bad happend");
+    //    }
     }
 
 

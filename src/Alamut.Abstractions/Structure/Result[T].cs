@@ -3,7 +3,7 @@ using System;
 namespace Alamut.Abstractions.Structure
 {
     /// <summary>
-    /// represents a generic data container that represent data with Result behavior
+    /// represents a generic data container that wrapped data with Result behavior
     /// </summary>
     /// <typeparam name="T">wrapped data</typeparam>
     public class Result<T> : Result
