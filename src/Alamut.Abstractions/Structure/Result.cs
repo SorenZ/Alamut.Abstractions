@@ -54,7 +54,7 @@ namespace Alamut.Abstractions.Structure
             return new Result
             {
                 Succeed = false,
-                Message = ex.ToString(),
+                Message = ex.Message,
                 StatusCode = statusCode
             };
         }
