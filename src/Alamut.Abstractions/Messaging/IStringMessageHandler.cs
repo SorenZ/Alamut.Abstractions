@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Alamut.Kafka.Contracts
+namespace Alamut.Abstractions.Messaging
 {
     public interface IStringMessageHandler
     {
