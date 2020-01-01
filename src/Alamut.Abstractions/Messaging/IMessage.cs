@@ -4,5 +4,7 @@ namespace Alamut.Abstractions.Messaging
     {
         string Id { get; set; }
         string EventName { get; set; }
+        bool AcknowledgeRequested { get; set; }
+        string AcknowledgeTopic { get; set; }
     }
 }
