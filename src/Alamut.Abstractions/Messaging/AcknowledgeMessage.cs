@@ -1,4 +1,4 @@
-using Alamut.Abstractions.Structure;
+﻿using Alamut.Abstractions.Structure;
 
 namespace Alamut.Abstractions.Messaging
 {
