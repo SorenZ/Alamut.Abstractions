@@ -6,7 +6,7 @@ namespace Alamut.Abstractions.Messaging
     /// <summary>
     /// message handler base interface
     /// </summary>
-    /// <typeparam name="TMessage"></typeparam>
+    /// <typeparam name="TMessage">the type of Message stored and provided by the Broker to handler</typeparam>
     /// <remark>inherited class should decorated with TopicsAttribute</remark>
     public interface IMessageHandler<TMessage>
     {
