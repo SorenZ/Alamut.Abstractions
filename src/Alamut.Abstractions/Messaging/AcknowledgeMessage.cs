@@ -2,12 +2,20 @@
 
 namespace Alamut.Abstractions.Messaging
 {
-    public class AcknowledgeMessage : IMessage
+    /// <summary>
+    /// it would publish to the respond of a message that requests an an acknowledge (AcknowledgeRequested = true)
+    /// the Id must be set with the same Id of original message
+    /// </summary>
+    public class AcknowledgeMessage
     {
+        /// <summary>
+        /// it must populated with the same Id of the original message that requested an acknowledge
+        /// </summary>
+        /// <value></value>
         public string Id { get; set; }
-        public string EventName { get; set; }
-        public bool AcknowledgeRequested { get; set; }
-        public string AcknowledgeTopic { get; set; }
+        /// <summary>
+        /// provides the information about how the message(that requested acknowledge) Has been processed 
+        /// </summary>
         public Result Result { get; set; }
     }
 }
