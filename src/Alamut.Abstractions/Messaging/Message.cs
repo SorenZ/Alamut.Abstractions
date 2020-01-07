@@ -6,6 +6,6 @@ namespace Alamut.Abstractions.Messaging
         public string EventName { get; set; }
         public bool AcknowledgeRequested { get; set; }
         public string AcknowledgeTopic { get; set; }
-        public object Data { get; set; }
+        public object Body { get; set; }
     }
 }
