@@ -1,4 +1,4 @@
-namespace Alamut.Abstractions.Messaging
+namespace Alamut.Abstractions.Messaging.MessageContracts
 {
     /// <summary>
     /// provides a base contract for every message in the Messaging system

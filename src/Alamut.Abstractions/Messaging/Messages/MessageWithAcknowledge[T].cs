@@ -1,23 +1,22 @@
-namespace Alamut.Abstractions.Messaging
+using Alamut.Abstractions.Messaging.MessageContracts;
+
+namespace Alamut.Abstractions.Messaging.Messages
 {
     /// <summary>
-    /// provides a full feature message data structure
+    /// provides a message with an acknowledge request
     /// </summary>
-    /// <typeparam name="T">the type of the body of actual data</typeparam>
-    public class FullMessage<T> : IMessage, IMessageWithAcknowledge, IEventMessage
+    /// <typeparam name="T"></typeparam>
+    public class MessageWithAcknowledge<T> : IMessageWithAcknowledge
     {
         /// <inheritdoc />
         public string Id { get; set; }
-
-        /// <inheritdoc />
-        public string EventName { get; set; }
 
         /// <inheritdoc />
         public bool AcknowledgeRequested { get; set; }
 
         /// <inheritdoc />
         public string AcknowledgeTopic { get; set; }
-
+        
         /// <summary>
         /// The actual data that moves through messaging system
         /// </summary>

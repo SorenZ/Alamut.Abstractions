@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Alamut.Abstractions.Messaging.MessageContracts;
 
 namespace Alamut.Abstractions.Messaging
 {

@@ -1,6 +1,6 @@
 ﻿using Alamut.Abstractions.Structure;
 
-namespace Alamut.Abstractions.Messaging
+namespace Alamut.Abstractions.Messaging.Messages
 {
     /// <summary>
     /// it would publish to the respond of a message that requests an an acknowledge (AcknowledgeRequested = true)

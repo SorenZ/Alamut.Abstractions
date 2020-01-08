@@ -1,4 +1,4 @@
-namespace Alamut.Abstractions.Messaging
+namespace Alamut.Abstractions.Messaging.MessageContracts
 {
     /// <summary>
     /// provides a message with an acknowledge request 

@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace Alamut.Abstractions.Messaging
+namespace Alamut.Abstractions.Messaging.Handlers
 {
     /// <summary>
     /// string Message Handler base interface

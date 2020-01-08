@@ -1,3 +1,5 @@
+using Alamut.Abstractions.Messaging.MessageContracts;
+using Alamut.Abstractions.Messaging.Messages;
 using Alamut.Abstractions.Structure;
 
 namespace Alamut.Abstractions.Messaging

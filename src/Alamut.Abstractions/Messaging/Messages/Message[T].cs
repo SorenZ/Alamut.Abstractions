@@ -1,4 +1,6 @@
-namespace Alamut.Abstractions.Messaging
+using Alamut.Abstractions.Messaging.MessageContracts;
+
+namespace Alamut.Abstractions.Messaging.Messages
 {
     /// <summary>
     /// provides basic structure for Messaging system
