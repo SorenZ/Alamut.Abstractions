@@ -1,3 +1,4 @@
+using System;
 using Alamut.Abstractions.Messaging.MessageContracts;
 using Alamut.Abstractions.Messaging.Messages;
 using Alamut.Abstractions.Structure;
@@ -15,9 +16,9 @@ namespace Alamut.Abstractions.Messaging
         /// <param name="body">The actual data that moves through messaging system</param>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public static Message<T> Build<T>(T body) => 
+        public static Message<T> Build<T>(T body) =>
             new Message<T> { Body = body };
-        
+
         /// <summary>
         /// build a Message-with-Acknowledge 
         /// </summary>
@@ -25,9 +26,9 @@ namespace Alamut.Abstractions.Messaging
         /// <param name="acknowledgeTopic">the topic that supposes the <see cref="AcknowledgeMessage"> will publish into it</param>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public static MessageWithAcknowledge<T> Build<T>(T body, string acknowledgeTopic) => 
-            new MessageWithAcknowledge<T> 
-            { 
+        public static MessageWithAcknowledge<T> Build<T>(T body, string acknowledgeTopic) =>
+            new MessageWithAcknowledge<T>
+            {
                 Body = body,
                 AcknowledgeRequested = true,
                 AcknowledgeTopic = acknowledgeTopic
@@ -42,14 +43,22 @@ namespace Alamut.Abstractions.Messaging
         /// <param name="acknowledgeTopic">the topic that supposes the <see cref="AcknowledgeMessage"> will publish into it</param>
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
-        public static FullMessage<T> Build<T>(T body, string eventName, bool acknowledgeRequested, string acknowledgeTopic) => 
-            new FullMessage<T> 
-            { 
+        public static FullMessage<T> Build<T>(T body,
+            string eventName,
+            bool acknowledgeRequested = false,
+            string acknowledgeTopic = "")
+        {
+            if(acknowledgeRequested == true && string.IsNullOrEmpty(acknowledgeTopic))
+            { throw new ArgumentNullException("when `acknowledgeRequested` you must provide `acknowledgeTopic`"); }
+
+            return new FullMessage<T>
+            {
                 Body = body,
                 EventName = eventName,
-                AcknowledgeRequested = true,
+                AcknowledgeRequested = acknowledgeRequested,
                 AcknowledgeTopic = acknowledgeTopic
             };
+        }
 
         /// <summary>
         /// build an Acknowledge-Message 
@@ -63,7 +72,7 @@ namespace Alamut.Abstractions.Messaging
                 Id = id,
                 Result = result
             };
-        
+
     }
 
 }
