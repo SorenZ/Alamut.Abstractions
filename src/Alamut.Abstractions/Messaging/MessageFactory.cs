@@ -46,7 +46,7 @@ namespace Alamut.Abstractions.Messaging
         public static FullMessage<T> Build<T>(T body,
             string eventName,
             bool acknowledgeRequested = false,
-            string acknowledgeTopic = "")
+            string acknowledgeTopic = null)
         {
             if(acknowledgeRequested == true && string.IsNullOrEmpty(acknowledgeTopic))
             { throw new ArgumentNullException("when `acknowledgeRequested` you must provide `acknowledgeTopic`"); }
