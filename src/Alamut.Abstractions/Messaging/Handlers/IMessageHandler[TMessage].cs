@@ -10,14 +10,18 @@ namespace Alamut.Abstractions.Messaging.Handlers
     /// <remark>inherited class should decorated with TopicsAttribute</remark>
     public interface IMessageHandler<TMessage> : IMessageHandler
     {
-        Task Handle(TMessage message, CancellationToken token);
-    }
-
-    /// <summary>
-    /// a flag interface to mark Message Handler
-    /// </summary>
-    public interface IMessageHandler
-    {
+        /// <summary>
+        /// provides a list of topics supposed to handle 
+        /// </summary>
+        /// <value></value>
+        string[] Topics { get; }
         
+        /// <summary>
+        /// handles a received message 
+        /// </summary>
+        /// <param name="message">the message</param>
+        /// <param name="token"></param>
+        /// <returns></returns>
+        Task Handle(TMessage message, CancellationToken token);
     }
 }
