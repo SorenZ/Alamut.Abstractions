@@ -6,7 +6,14 @@
     /// </summary>
     public interface ICacheable
     {
+        /// <summary>
+        /// represents unique caching key
+        /// </summary>
         string Key { get; }
+
+        /// <summary>
+        /// represent caching expiration option (it could be null and act as default provider) 
+        /// </summary>
         ExpirationOptions Options { get; }
     }
 }
