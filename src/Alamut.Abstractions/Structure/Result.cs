@@ -3,7 +3,7 @@ using System;
 namespace Alamut.Abstractions.Structure
 {
     /// <summary>
-    /// represent result data structure for API services
+    /// represents result data structure for API services
     /// </summary>
     public class Result
     {

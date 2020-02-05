@@ -1,5 +1,8 @@
 namespace Alamut.Abstractions.Principal
 {
+    /// <summary>
+    /// provides information about current user
+    /// </summary>
     public interface IUserInfo
     {
         /// <summary>
